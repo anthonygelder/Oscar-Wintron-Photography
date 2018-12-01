@@ -1,0 +1,24 @@
+.container-fluid {
+	
+	height: 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+	/* background-color: #f3f3f3; */
+	border-left: 10px double black;
+	border-right: 10px double black;
+	background-image: linear-gradient(#e6fcfc,#ffc79d);
+
+}
+
+@font-face {
+	font-family: Lucha;
+	src: url('fonts/RacingSansOne-Regular.ttf');
+}
+
+h1 {
+	font-family: 'Lucha', sans-serif;
+	font-size: 100px;
+}
