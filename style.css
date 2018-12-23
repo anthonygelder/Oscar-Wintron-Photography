@@ -7,14 +7,24 @@
 .content {
 	border-left: 10px double black;
 	border-right: 10px double black;
-	background:
-		linear-gradient(
-			rgba(212, 136, 136, 0.589),
-			rgba(0, 0, 255, 0.45)
-		),
-		url(images/8333.jpg);
+	padding: 0%;
 }
 
+.dropdown {
+	
+}
+
+header {
+	background:
+	linear-gradient(
+		135deg,
+		rgba(212, 136, 136, 0.589),
+		rgba(0, 0, 255, 0.45)
+	),
+	url(images/8333.jpg);
+	padding: 5px;
+	
+}
 
 @font-face {
 	font-family: Lucha;
@@ -24,7 +34,7 @@
 h1 {
 	font-family: 'Lucha', sans-serif;
 	font-size: 72px;
-	text-shadow: 20px 20px #FF0000;
+	text-shadow: 5px 5px rgb(255, 255, 255);
 }
 
 /* Dropdown Button */
