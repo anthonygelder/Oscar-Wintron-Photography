@@ -19,12 +19,16 @@
 
 	<script type="text/javascript">
 	$(document).on('ready', function () {
-            $("#mySlider").slick({
+			$("#mySlider").slick({
+				prevArrow: '<img id="prev" class="a-left control-c prev slick-prev" src="images/arrow2.svg">',
+				nextArrow: '<img id="next" class="a-right control-c next slick-next" src="images/arrow.svg">',
 				dots: true,
 				infinite: true,
 				speed: 500,
 				fade: true,
-				cssEase: 'linear'
+				cssEase: 'linear',
+				mobileFirst: true,
+				autoplay: true
             });
         });
 	</script>
@@ -32,30 +36,33 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-2"></div>
+			<div class="col-2">
+			</div>
 			<div class=" col-lg-8 content">
 					<div class="row">
 						<!-- Left Header - Name-->
 						<div class="col-md-6 col-sm-12">
-							<h1 class="font-weight-bold text-left  ml-4 m-0">Oscar Witron</h1>
+							<h1 class="font-weight-bold text-left ml-4 m-0">Oscar Witron</h1>
 						</div>
-
-
 
 						<!-- Right Header - Navigation -->
 						<div class="col-md-6 col-sm-12">
-							<div class="float-right mr-3"> <!-- float-right -->
+							<div class="float-md-left float-right mr-3 mt-3"> <!-- float-right -->
 								
-								<a href="#"><i class="fab fa-linkedin"></i></a>
-								<a href="#"><i class="fas fa-envelope-square"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.linkedin.com/in/oscar-witron-0518bb167" target="_blank"><i class="fab fa-linkedin"></i></a>
+								<a href="mailto:someone@example.com?Subject=Hi%20Oscar" target="_top"><i class="fas fa-envelope-square"></i></a>
+								<a href="https://www.instagram.com/uhhscar/" target="_blank"><i class="fab fa-instagram"></i></a>
 
-								<div class="dropdown">
+								<div class="dropdown ml-3">
 									<a href="#" onclick="myFunction()" class="dropbtn fas fa-caret-square-down"><span></span></a>
 									<div id="myDropdown" class="dropdown-content">
-										<a href="#">Link 1</a>
-										<a href="#">Link 2</a>
-										<a href="#">Link 3</a>
+
+										<div class="btn-group-vertical" role="group">
+											<a href="#" class="btn btn-dark ml-0"><p>Events</p></a>
+											<a href="#" class="btn btn-dark"><p>Portraits</p></a>
+											<a href="#" class="btn btn-dark"><p>Travel</p></a>
+											<a href="#" class="btn btn-dark"><p>About Me</p></a>
+										</div>
 									</div>
 								</div>
 
@@ -63,8 +70,7 @@
 						</div>
 					</div>
 
-					<header>
-				</header>
+				<div class="line"></div>
 		
 			<div id="main" style="display:block;">
 
@@ -79,6 +85,9 @@
 					<div class="item">
 						<img src="images/home/3.jpg" style="width:100%;">
 					</div>
+					<div class="item">
+						<img src="images/home/4.jpg" style="width:100%;">
+					</div>
 				</div>
 
 
@@ -89,7 +98,7 @@
 		</div>
 	</div>
 
-	<!-- <script>
+	<script>
 			/* When the user clicks on the button, 
 			toggle between hiding and showing the dropdown content */
 			function myFunction() {
@@ -105,6 +114,7 @@
 				}
 			  }
 			}
-			</script> -->
+			</script>
+			
 </body>
 </html>
