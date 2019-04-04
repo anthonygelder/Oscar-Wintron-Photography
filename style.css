@@ -1,7 +1,7 @@
 .container-fluid {
 	max-height: 100%;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 .content {
@@ -55,7 +55,7 @@ h1 {
 h2 {
 	font-family: 'Category', sans-serif;
 	font-size: 25px;
-	margin-top: 36px; 
+	margin-top: 35px; 
 }
 
 .rwd-break { 
@@ -104,15 +104,11 @@ a:hover, a:visited, a:link, a:active {
 #next {
 	position: absolute;
 	z-index: 1;
-
 	left: calc(100% + 25px);
-	/* left: 5px; */
-
 }
 
 #prev {
 	max-width: 100%;
-
 	left: calc(0% - 45px);
 }
 
@@ -162,39 +158,21 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #about {
-	/* width: 100%;
-	margin: 0 auto;
-	margin-top: 50px; */
-	/* margin: auto; */
-
-	/* width: 100%;
-	padding: 10px; */
-	
-	padding: 5% 0;
-
+	padding: 1% 0;
 	text-align: center;
 }
 
 #text {
-	/* margin: auto 0; */
-	/* padding-right: 50px; */
-	/* padding-left: 50px; */
 	padding: 20px 50px;
 	text-align: center;
 	line-height: 50px;
+	margin-top: 50px;
 }
-
-#pic {
-	border-left: 4px solid black;
-
-}
-/* * {
-	border: 2px solid green;
-} */
 
 .oscar {
-	border-radius: 60px;
-	width: 80%;
+	/* width: 70vh; */
+	height: 88vh;
+	margin-left: 35px;
 }
 
 p {
@@ -222,6 +200,10 @@ p {
 		margin-top: -10px;
 	}
 
+	h3 {
+		display: none;
+	}
+
 	.name {
 		text-align: center;
 	}
@@ -236,6 +218,12 @@ p {
 
 	#body {
 		margin-top: 50%;
+	}
+
+	#text {
+		text-align: center;
+		line-height: 20px;
+		margin-top: 0;
 	}
 
 	.navBtn {
