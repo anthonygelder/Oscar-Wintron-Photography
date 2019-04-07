@@ -62,7 +62,6 @@ h2 {
 	display: none;
 }
 
-
 i, a {
 	color: black;
 	font-size: 30px;
@@ -116,18 +115,15 @@ a:hover, a:visited, a:link, a:active {
 	width: 100%;
 }
 
-/* Dropdown Button */
 .dropbtn {
 	cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
 	position: relative;
 	display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -139,7 +135,6 @@ a:hover, a:visited, a:link, a:active {
 	margin-top: 10px;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
 	color: white;
 	padding: 12px 16px;
@@ -147,12 +142,10 @@ a:hover, a:visited, a:link, a:active {
 	display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
 	background-color: rgb(255, 255, 255)
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
 	display:block;
 }
@@ -163,16 +156,22 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #text {
-	padding: 20px 50px;
+	padding: 40px 30px 0px 70px;
 	text-align: center;
-	line-height: 50px;
-	margin-top: 50px;
+	line-height: 40px;
+	margin-top: 30px;
+}
+
+#pic {
+	padding-right: 10px;
 }
 
 .oscar {
-	/* width: 70vh; */
 	height: 88vh;
-	margin-left: 35px;
+}
+
+.smallOscar {
+	display: none;
 }
 
 p {
@@ -181,8 +180,17 @@ p {
 
 @media screen and (max-width: 576px) {
 
+	.container-fluid { 
+		width: 100vw;
+	}
 	.content {
 		height: 100vh;
+		width: 100vw;
+		border-top: 10px double black;
+		border-bottom: 10px double black;
+		border-left: 0px;
+		border-right: 0px;
+		padding: 0%;
 	}
 
 	h1 {
@@ -190,7 +198,7 @@ p {
 		text-shadow: 1px 1px 8px rgb(204, 203, 203);
 		width: 100vw;
 		display: block;
-		margin-left: 0px;
+		margin-left: 5px;
 		word-spacing: 5px;
 	}
 
@@ -220,18 +228,42 @@ p {
 		margin-top: 50%;
 	}
 
+	#about {
+		padding-top: 5px;
+		overflow: scroll;
+		height: 43vh;
+	}
+
 	#text {
 		text-align: center;
-		line-height: 20px;
-		margin-top: 0;
+		line-height: 22px;
+		margin-top: -15px;
+		padding: 0px 10px;
+		height: 190px;
+	}
+
+	.oscar {
+		display: none;
+	}
+
+	.smallOscar {
+		width: 50%;
+		display: block;
+		border-radius: 100px;
+		margin: 30px auto 0px auto;
+	}
+
+	.hideOnMobile {
+		display: none;
 	}
 
 	.navBtn {
 		display: fixed;
-		bottom: -260px;
-		left: -18%;
-		/* overflow: hidden; */
+		bottom: -280px;
 		width: 100%;
+		position: static;
+		text-align: center;
+		height: 20px;
 	}
 
 	i, a {
@@ -243,15 +275,6 @@ p {
 	.name {
 		margin-top: 15%;
 		text-align: center;
-	}
-
-	.content {
-		border-top: 10px double black;
-		border-bottom: 10px double black;
-		border-left: 0px;
-		border-right: 0px;
-		padding: 0%;
-		height: 100vh;
 	}
 
 	.main {
@@ -267,12 +290,6 @@ p {
 		top: -215px;
 		left: -105px;
 	
-	}
-
-	.navBtn {
-		position: static;
-		margin-top: 0%;
-		text-align: center;
 	}
 }
 
