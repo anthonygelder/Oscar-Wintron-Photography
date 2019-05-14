@@ -13,6 +13,10 @@
 	src: url('fonts/Goldoni_DEMO.otf')
 }
 
+body {
+	height: 100vh;
+}
+
 .container-fluid {
 	height: 100%;
 	background-repeat: no-repeat;
@@ -26,7 +30,7 @@
 .content {
 	border-left: 10px double black;
 	border-right: 10px double black;
-	padding: 0%;
+	padding: 0;
 	height: 100vh;
 }
 
@@ -300,6 +304,10 @@ p {
 		display: block;
 		border-radius: 100px;
 		margin: 50px auto 0px auto;
+	}
+
+	.name {
+		margin-top: 20px;
 	}
 
 }
